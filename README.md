@@ -58,6 +58,15 @@ Correr el proyecto en la siguiente ruta, para cargar la data en tu base de datos
 http://Localhost:3000/api/v2/seed
 ```
 
+## Run DockerFile
+
+1. Verificar tener creado el `.env`
+2. llenar las variables de entorno
+3. Crear la nueva imagen
+   ```
+   docker compose -f docker-compose.prod.yaml --env-file .env up --build
+   ```
+
 ## Stack Usado
 
 - MongoDB
@@ -71,3 +80,7 @@ http://Localhost:3000/api/v2/seed
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+```
+
+```
